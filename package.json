@@ -1,0 +1,43 @@
+{
+  "name": "@core-framework/cli-runner",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "CLI runner for Core Framework",
+  "main": "./CliRunner.js",
+  "engines": {
+    "node": ">=7.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/core-framework-js/cli-runner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/core-framework-js/cli-runner/issues"
+  },
+  "homepage": "https://github.com/core-framework-js/cli-runner",
+  "keywords": [
+    "core",
+    "framework",
+    "core-framework",
+    "cli",
+    "commandline",
+    "commands"
+  ],
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint .",
+    "test": "./node_modules/.bin/mocha test/**/*Test.js",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- test/**/*Test.js"
+  },
+  "peerDependencies": {
+    "@core-framework/core": "^0.0.1"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.0-canary.1",
+    "eslint": "^3.19.0",
+    "istanbul": "next",
+    "mocha": "^3.2.0"
+  }
+}
